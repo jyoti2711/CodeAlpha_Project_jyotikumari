@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="image.css">
+</head>
+<body> 
+    <header>
+        <h1>Image gallery</h1>
+    </header>
+    <main>
+        <figure class="gallery">
+
+            <div>
+            <img src="https://th.bing.com/th/id/OIP.-ykukAQoEaWAWrP7mYGrPQAAAA?rs=1&pid=ImgDetMain" onclick="openModal(https://img.freepik.com/premium-vector/couple-cat-love-cute-cartoon-isolated-pink_125446-606.jpg)" alt="Image 1">
+            <button onclick="deleteImage(this)">Delete</button>
+            </div>
+
+            <div>
+            <img src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670" onclick="openModal(https://image.freepik.com/free-vector/i-love-cat_42515-68.jpg)" alt="Image 2">
+            <button onclick="deleteImage(this)">Delete</button>
+            </div>
+
+            <div>
+            <img src="https://wallup.net/wp-content/uploads/2018/10/06/708179-kittens-kitten-cat-cats-baby-cute-s.jpg" onclick="openModal(https://www.creativefabrica.com/wp-content/uploads/2023/06/05/Black-Cat-on-Pumpkin-Halloween-Clipart-Graphics-71355827-1-580x387.jpg)" alt="Image 3">
+            <button onclick="deleteImage(this)">Delete</button>
+            </div>
+
+            <div>
+            <img src="https://th.bing.com/th/id/OIP.cS9PHg7timmacvNSk4ppSwHaHa?w=626&h=626&rs=1&pid=ImgDetMain" onclick="openModal(https://th.bing.com/th/id/OIP.y0KOcvjTFpQa8CNqdduTTwHaGU?rs=1&pid=ImgDetMain)" alt="Image 4">
+            <button onclick="deleteImage(this)">Delete</button>
+            </div>
+
+            <div>
+            <img src="https://th.bing.com/th/id/OIP.Aes8h-O5Ssr8YH-x3bKQsAHaHa?w=626&h=626&rs=1&pid=ImgDetMain" onclick="openModal(https://thegraphicsfairy.com/wp-content/uploads/blogger/-bXj46sbmVUk/UCGarw9k0_I/AAAAAAAATpk/3-a644IlM6Q/s1600/Halloween-PumpkinGirl-GraphicsFairy2.jpg)" alt="Image 5">
+            <button onclick="deleteImage(this)">Delete</button>
+            </div>
+
+            <div>
+            <img src="https://th.bing.com/th/id/OIP.UR_uoyh5iQ09gbxK6Gri-QHaHa?w=500&h=500&rs=1&pid=ImgDetMain" onclick="openModal(https://th.bing.com/th/id/OIP.UR_uoyh5iQ09gbxK6Gri-QHaHa?w=500&h=500&rs=1&pid=ImgDetMain)" alt="Image 6">
+            <button onclick="deleteImage(this)">Delete</button>
+            </div>
+
+           <div>
+            <img src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670" onclick="openModal(https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670)" alt="image 7">
+            <button onclick="deleteImage(this)">Delete</button>
+            </div>
+
+            <div>
+            <img src="https://img.freepik.com/premium-photo/adorable-cat-with-ribbons-background-whimsical-charming-pet-generative-ai_87561-10511.jpg" onclick="openModal(https://img.freepik.com/premium-photo/adorable-cat-with-ribbons-background-whimsical-charming-pet-generative-ai_87561-10511.jpg)" alt="Image 8">
+            <button onclick="deleteImage(this)">Delete</button>
+            </div>
+    
+        
+        </figure>
+    </main>
+    <dialog id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
